@@ -82,7 +82,7 @@ label {
 
 .center {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     height: 2.5rem;
 
@@ -96,7 +96,7 @@ label {
     border-radius: 25px;
     background: rgb(0, 0, 0, .1);
 
-    width: 70%;
+    width: 80%;
 }
 
 #search-input {
