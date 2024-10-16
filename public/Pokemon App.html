@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Pokemon Search App</title>
+    <link rel="stylesheet" href="../src/styles/Pokemon App.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Search App</h1>
+        <div class="card">
+            <header>
+                <label for="search-input">Search for Pokémon Name or ID:</label>
+                <div class="center">
+                    <div class="search-box">
+                        <input type="text" id="search-input" required>
+                        <ul class="results">
+                            
+                        </ul>
+                    </div>
+                    <button id="search-button">Search</button>
+                </div>
+            </header>
+            <section class="pokemon-info hide">
+                <div class="name">
+                    <span id="pokemon-name"></span>
+                    <span id="pokemon-id"></span>
+                </div>
+                <div class="weight-and-height">
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                </div>
+                <img src="" alt="" id="sprite">
+                <div id="types">
+
+                </div>
+            </section>
+            <footer class="stats hide">
+                <span class="stat">Base</span>
+                <span class="stat">Stats</span>
+                <span class="stat" id="hp-text">HP</span>
+                <span class="stat" id="hp"></span>
+                <span class="stat" id="attack-text">Attack</span>
+                <span class="stat" id="attack"></span>
+                <span class="stat" id="defense-text">Defense</span>
+                <span class="stat" id="defense"></span>
+                <span class="stat" id="special-attack-text">Special Attack</span>
+                <span class="stat" id="special-attack"></span>
+                <span class="stat" id="special-defense-text">Special Defense</span>
+                <span class="stat" id="special-defense"></span>
+                <span class="stat" id="speed-text">Speed</span>
+                <span class="stat" id="speed"></span>
+            </footer>
+        </div>
+    </div>
+    <script src="../src/Pokemon App.js"></script>
+</body>
+</html>
