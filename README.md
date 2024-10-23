@@ -8,5 +8,6 @@ This project allows users to search for Pokémon by name or ID with autocomplete
 - Autocomplete suggestions
 - Match only letters and numbers
 - Change color based on the Pokémon's element
+- There is a debounce function for click, keyup, and input events (to ensure they trigger only once and reduce unnecessary requests)
 
 [Click here to try the app](https://codepen.io/thanawatpanpinij/full/gOVWjdq/)
