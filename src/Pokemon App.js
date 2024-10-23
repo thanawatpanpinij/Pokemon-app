@@ -114,17 +114,17 @@ async function onInput(event) {
 
 function onkeyUp(event) {
     if (event.key === "Enter") {
-        const pokemonNameOrId = INPUT_ELEM.value.toLowerCase().match(/[a-z0-9\-]/g).join("");
+        const pokemonNameOrId = INPUT_ELEM.value;
         if (pokemonNameOrId === "") return alert("Please enter pokemon's name");
-        getData(pokemonNameOrId);
+        getData(pokemonNameOrId.toLowerCase().match(/[a-z0-9\-]/g).join(""));
     }
 }
 
 function onClick() {
-    const pokemonNameOrId = INPUT_ELEM.value.toLowerCase().match(/[a-z0-9\-]/g).join("");
+    const pokemonNameOrId = INPUT_ELEM.value;
 
     if (pokemonNameOrId === "") return alert("Please enter pokemon's name");
-    getData(pokemonNameOrId);
+    getData(pokemonNameOrId.toLowerCase().match(/[a-z0-9\-]/g).join(""));
 }
 
 function debounce(callback, delay = 500) {
