@@ -138,7 +138,8 @@ function debounce(callback, delay = 500) {
 }
 
 function run() {
-    INPUT_ELEM.addEventListener("keyup", onkeyUp);
+    const debounceOnKeyUp = debounce(onkeyUp);
+    INPUT_ELEM.addEventListener("keyup", debounceOnKeyUp);
 
     const debounceOnClick = debounce(onClick);
     BUTTON_ELEM.addEventListener("click", debounceOnClick);
